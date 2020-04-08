@@ -16,7 +16,7 @@ import {
 import {ToolPanelColumnGroupComp} from "./toolPanelColumnGroupComp";
 import {ToolPanelColumnComp} from "./toolPanelColumnComp";
 import {BaseColumnItem} from "./primaryColsPanel";
-import {ToolPanelColDefService} from "@ag-grid-enterprise/side-bar";
+import {ToolPanelColDefService} from "@blocks/side-bar";
 import {EXPAND_STATE} from "./primaryColsHeaderPanel";
 
 export type ColumnItem = BaseColumnItem & Component;

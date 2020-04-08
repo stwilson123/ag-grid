@@ -53,6 +53,7 @@ function genConfig(buildsToUse, buildName, sourceDirectory, moduleName) {
 
     const config = {
         input: path.resolve(sourceDirectory, `./dist/es6/main.js`),
+		external: ['@ag-grid-community/core'], 
         plugins: [
             node()      // for utils package - defaulting to use index.js
         ].concat(build.plugins || []),

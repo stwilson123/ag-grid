@@ -16,7 +16,7 @@ import {ToolPanelFilterComp} from "./toolPanelFilterComp";
 import {ToolPanelFiltersCompParams} from "./filtersToolPanel";
 import {ToolPanelFilterGroupComp, ToolPanelFilterItem} from "./toolPanelFilterGroupComp";
 import {EXPAND_STATE} from "./filtersToolPanelHeaderPanel";
-import {ToolPanelColDefService} from "@ag-grid-enterprise/side-bar";
+import {ToolPanelColDefService} from "@blocks/side-bar";
 
 export class FiltersToolPanelListPanel extends Component {
 

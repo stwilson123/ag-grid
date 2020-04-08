@@ -1,5 +1,5 @@
 import {Module, ModuleNames} from "@ag-grid-community/core";
-import {EnterpriseCoreModule} from "@ag-grid-enterprise/core";
+//import {EnterpriseCoreModule} from "@ag-grid-enterprise/core";
 import {AggregationStage} from "./rowGrouping/aggregationStage";
 import {GroupStage} from "./rowGrouping/groupStage";
 import {PivotColDefService} from "./rowGrouping/pivotColDefService";
@@ -14,7 +14,7 @@ export const RowGroupingModule: Module = {
         {componentName: 'AgGridHeaderDropZones', componentClass: GridHeaderDropZones}
     ],
     dependantModules: [
-        EnterpriseCoreModule
+        //EnterpriseCoreModule
     ]
 };
 

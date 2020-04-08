@@ -1,9 +1,9 @@
 import {Module, ModuleNames} from "@ag-grid-community/core";
-import {EnterpriseCoreModule} from "@ag-grid-enterprise/core";
+//import {EnterpriseCoreModule} from "@ag-grid-enterprise/core";
 import {FiltersToolPanelHeaderPanel} from "./filterToolPanel/filtersToolPanelHeaderPanel";
 import {FiltersToolPanelListPanel} from "./filterToolPanel/filtersToolPanelListPanel";
 import {FiltersToolPanel} from "./filterToolPanel/filtersToolPanel";
-import {SideBarModule} from "@ag-grid-enterprise/side-bar";
+import {SideBarModule} from "@blocks/side-bar";
 
 export const FiltersToolPanelModule: Module = {
     moduleName: ModuleNames.FiltersToolPanelModule,
@@ -17,7 +17,7 @@ export const FiltersToolPanelModule: Module = {
     ],
     dependantModules: [
         SideBarModule,
-        EnterpriseCoreModule
+       // EnterpriseCoreModule
     ]
 };
 
