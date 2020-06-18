@@ -1,5 +1,5 @@
 import { IFloatingFilterParams } from "../floatingFilter";
-import { RefSelector } from "../../../widgets/componentAnnotations";
+import { RefSelector } from '../../../widgets/componentAnnotations';
 import { ProvidedFilterModel } from "../../../interfaces/iFilter";
 import { _ } from "../../../utils";
 import { Constants } from "../../../constants";
@@ -12,19 +12,13 @@ import { AgInputTextField } from "../../../widgets/agInputTextField";
 
 export abstract class TextInputFloatingFilter extends SimpleFloatingFilter {
 
-    @RefSelector('eFloatingFilterInput') private eFloatingFilterInput: AgInputTextField;
+    protected eFloatingFilterInput: AgInputTextField;
 
     protected params: IFloatingFilterParams;
 
     private applyActive: boolean;
 
-    @PostConstruct
-    private postConstruct(): void {
-        this.setTemplate(
-            `<div class="ag-floating-filter-input" role="presentation">
-                <ag-input-text-field ref="eFloatingFilterInput"></ag-input-text-field>
-            </div>`);
-    }
+   
 
     protected getDefaultDebounceMs(): number {
         return 500;
