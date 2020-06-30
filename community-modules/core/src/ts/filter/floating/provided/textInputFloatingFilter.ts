@@ -1,5 +1,5 @@
 import { IFloatingFilterParams } from "../floatingFilter";
-import { RefSelector } from '../../../widgets/componentAnnotations';
+import { RefSelector } from "../../../widgets/componentAnnotations";
 import { ProvidedFilterModel } from "../../../interfaces/iFilter";
 import { _ } from "../../../utils";
 import { Constants } from "../../../constants";
@@ -18,8 +18,7 @@ export abstract class TextInputFloatingFilter extends SimpleFloatingFilter {
 
     private applyActive: boolean;
 
-   
-
+  
     protected getDefaultDebounceMs(): number {
         return 500;
     }

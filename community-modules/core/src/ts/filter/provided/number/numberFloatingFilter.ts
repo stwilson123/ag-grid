@@ -1,20 +1,22 @@
 import { NumberFilter, NumberFilterModel } from "./numberFilter";
 import { SimpleFilter } from "../simpleFilter";
 import { TextInputFloatingFilter } from "../../floating/provided/textInputFloatingFilter";
-import { PostConstruct, Autowired } from '../../../context/context';
-import { RefSelector } from '../../../widgets/componentAnnotations';
-import { AgInputNumberField } from '../../../widgets/agInputNumberField';
+import { PostConstruct } from "../../../context/context";
+import { RefSelector } from "../../../widgets/componentAnnotations";
+import { AgInputNumberField } from "../../../widgets/agInputNumberField";
 
 export class NumberFloatingFilter extends TextInputFloatingFilter {
 
     @RefSelector('eFloatingFilterInput') protected eFloatingFilterInput: AgInputNumberField;
+
     @PostConstruct
     private postConstruct(): void {
-        this.setTemplate(/* html */`
-            <div class="ag-floating-filter-input" role="presentation">
+        this.setTemplate(
+            `<div class="ag-floating-filter-input" role="presentation">
                 <ag-input-number-field ref="eFloatingFilterInput"></ag-input-number-field>
             </div>`);
-    } 
+    }
+
 
     protected getDefaultFilterOptions(): string[] {
         return NumberFilter.DEFAULT_FILTER_OPTIONS;
